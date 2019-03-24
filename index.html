@@ -3,6 +3,10 @@
     <meta charset="utf-8">
     <title>Kim Sung Il</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,600,900" rel="stylesheet">
     <script>
@@ -18,20 +22,19 @@
   <body>
     <nav>
       <ul>
-        <iframe src="TrustingHeartToJesus.mp" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+        <iframe src="TrustingHeartToJesus.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
         <audio autoplay loop>
-          <source src="TrustingHeartToJesus.mp" type="audio/mpeg">
+          <source src="TrustingHeartToJesus.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
         <li><a href="index.html"><div class="title">김성일 - Kim Sungil</div></a></li>
         <li><a href="words.html">기억</a></li>
-        <li><a href="#family">가족</a></li>
-        <li><a href="#letters">편지</a></li>
+        <li><a href="family.html">가족</a></li>
+        <li><a href="letter.html">편지</a></li>
       </ul>
     </nav>
-    <main>
-      <div id="pages">
-        <div id="memory" class="page">
+    <main id="top">
+        <div class="page">
           <div class="photo">
             <img src="img/boy3.jpg" alt="home"></br>
             <img src="img/boy7.jpeg" alt="home"></br>
@@ -44,135 +47,8 @@
             <img src="img/boy8.jpeg" alt="home"></br>
             <img src="img/boy10.jpg" alt="home"></br>
           </div>
+          <div class="top"><a href="#top">Back to Top</a></div>
         </div>
-        <div id="family" class="page">
-          <table>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><a href="#1984">1984</a></td>
-              <td><a href="#1985">1985</a></td>
-              <td><a href="#1986">1986</a></td>
-              <td><a href="#1987">1987</a></td>
-              <td><a href="#1988">1988</a></td>
-              <td><a href="#1989">1989</a></td>
-            </tr>
-            <tr>
-              <td><a href="#1990">1990</a></td>
-              <td><a href="#1991">1991</a></td>
-              <td><a href="#1992">1992</a></td>
-              <td><a href="#1993">1993</a></td>
-              <td><a href="#1994">1994</a></td>
-              <td><a href="#1995">1995</a></td>
-              <td><a href="#1996">1996</a></td>
-              <td><a href="#1997">1997</a></td>
-              <td><a href="#1998">1998</a></td>
-              <td><a href="#1999">1999</a></td>
-            </tr>
-            <tr>
-              <td><a href="#2000">2000</a></td>
-              <td><a href="#2001">2001</a></td>
-              <td><a href="#2002">2002</a></td>
-              <td><a href="#2003">2003</a></td>
-              <td><a href="#2004">2004</a></td>
-              <td><a href="#2005">2005</a></td>
-              <td><a href="#2006">2006</a></td>
-              <td><a href="#2007">2007</a></td>
-              <td><a href="#2008">2008</a></td>
-              <td><a href="#2009">2009</a></td>
-            </tr>
-            <tr>
-              <td><a href="#2010">2010</a></td>
-              <td><a href="#2011">2011</a></td>
-              <td><a href="#2012">2012</a></td>
-              <td><a href="#2013">2013</a></td>
-              <td><a href="#2014">2014</a></td>
-              <td><a href="#2015">2015</a></td>
-              <td><a href="#2016">2016</a></td>
-              <td><a href="#2017">2017</a></td>
-            </tr>
-          </table>
-          <div class="fam_photo">
-            <img src="img/love1.jpg" alt="home"></br>
-            <div id="1984" class="year">1984</div>
-            <div id="1985" class="year">1985</div>
-            <div id="1986" class="year">1986</div>
-            <div id="1987" class="year">1987</div>
-            <img src="img/fam/19871002.jpg" alt="19871002"></br>
-            <div id="1988" class="year">1988</div>
-            <img src="img/fam/19880524.jpg" alt="19880524"></br>
-            <img src="img/fam/19880531.jpg" alt="19880531"></br>
-            <div id="1989" class="year">1989</div>
-            <div id="1990" class="year">1990</div>
-            <div id="1991" class="year">1991</div>
-            <img src="img/fam/19910505.jpg" alt="19910505"></br>
-            <img src="img/fam/19910903.jpg" alt="19910903"></br>
-            <div id="1992" class="year">1992</div>
-            <img src="img/fam/19920914.jpg" alt="19920914"></br>
-            <img src="img/fam/19921120.jpg" alt="19921120"></br>
-            <div id="1993" class="year">1993</div>
-            <img src="img/fam/19930116.jpg" alt="19930116"></br>
-            <img src="img/fam/19930116_1.jpg" alt="19930116_1"></br>
-            <img src="img/fam/19930227.jpg" alt="19930227"></br>
-            <img src="img/fam/19931104.jpg" alt="19931104"></br>
-            <img src="img/fam/19931204.jpg" alt="19931204"></br>
-            <div id="1994" class="year">1994</div>
-            <div id="1995" class="year">1995</div>
-            <div id="1996" class="year">1996</div>
-            <div id="1997" class="year">1997</div>
-            <div id="1998" class="year">1998</div>
-            <div id="1999" class="year">1999</div>
-            <div id="2000" class="year">2000</div>
-            <div id="2001" class="year">2001</div>
-            <div id="2002" class="year">2002</div>
-            <div id="2003" class="year">2003</div>
-            <div id="2004" class="year">2004</div>
-            <div id="2005" class="year">2005</div>
-            <div id="2006" class="year">2006</div>
-            <div id="2007" class="year">2007</div>
-            <div id="2008" class="year">2008</div>
-            <div id="2009" class="year">2009</div>
-            <div id="2010" class="year">2010</div>
-            <div id="2011" class="year">2011</div>
-            <img src="img/fam/20110908.jpg" alt="20110908"></br>
-            <div id="2012" class="year">2012</div>
-            <img src="img/fam/20120610.jpg" alt="20120610"></br>
-
-            <div id="2013" class="year">2013</div>
-            <img src="img/fam/20130522.jpg" alt="20130522"></br>
-
-            <div id="2014" class="year">2014</div>
-            <img src="img/fam/20141207_christmas.jpg" alt="20141207"></br>
-            <img src="img/fam/20141207_christmas2.jpg" alt="20141207"></br>
-            <img src="img/fam/20141207_christmas3.jpeg" alt="20141207"></br>
-            <div id="2015" class="year">2015</div>
-            <img src="img/fam/20151129.jpg" alt="20151129"></br>
-
-            <div id="2016" class="year">2016</div>
-            <img src="img/fam/20160508.jpg" alt="20160508"></br>
-            <img src="img/fam/20161102.jpg" alt="20161102"></br>
-
-            <div id="2017" class="year">2017</div>
-
-            <div class="top"><a href="#family">Back to Top</a></div>
-
-          </div>
-        </div>
-        <div id="letters" class="page">
-          <div>
-            <h2>나의 그대에게</h2>
-          </div>
-          <div class="contactform">
-            <form action="https://formspree.io/lifeofsungilkim@gmail.com" method="POST" >
-              <input type="text" id="name" name="Name" placeholder="제목"></br>
-              <textarea id="subject" name="subject" placeholder="내용" style="height:300px"></textarea></br>
-              <input type="submit" value="보내기">
-            </form>
-          </div>
-        </div>
-      </div>
     </main>
     <footer>
       Copyright © 2018 Kim

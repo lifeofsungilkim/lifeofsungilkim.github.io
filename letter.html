@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kim Sung Il</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,600,900" rel="stylesheet">
+    <script>
+      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if(!isChrome){
+          $('#iframeAudio').remove()
+        }
+      else{
+         $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <iframe src="TrustingHeartToJesus.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+        <audio autoplay loop>
+          <source src="TrustingHeartToJesus.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <li><a href="index.html"><div class="title">김성일 - Kim Sungil</div></a></li>
+        <li><a href="words.html">기억</a></li>
+        <li><a href="family.html">가족</a></li>
+        <li><a href="letter.html"><span class="orange">편지</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="letters" class="page">
+        <div>
+          <h2>나의 그대에게</h2>
+        </div>
+        <div class="contactform">
+          <form action="https://formspree.io/lifeofsungilkim@gmail.com" method="POST" >
+            <input type="text" id="name" name="Name" placeholder="제목"></br>
+            <textarea id="subject" name="subject" placeholder="내용" style="height:300px"></textarea></br>
+            <input type="submit" value="보내기">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright © 2018 Kim
+    </footer>
+  </body>
+</html>
