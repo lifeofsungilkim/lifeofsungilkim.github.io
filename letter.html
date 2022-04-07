@@ -31,11 +31,12 @@
           <h2>나의 그대에게</h2>
         </div>
         <div class="contactform">
-          <form action="https://formspree.io/lovesungilkim@gmail.com" method="POST" >
-            <input type="text" id="name" name="Name" placeholder="제목"></br>
-            <textarea id="subject" name="subject" placeholder="내용" style="height:300px"></textarea></br>
-            <input type="submit" value="보내기">
-          </form>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                    <input type="text" name="title" id="title" placeholder="제목" required=""></br>
+                    <textarea rows="15" name="message" id="message" placeholder="내용" required=""></textarea></br>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></br>
+                <input type="submit" value="보내기">
+            </form>
         </div>
       </div>
     </main>
